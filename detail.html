@@ -30,7 +30,9 @@
     </div>
     <header>
       <h1>
-        <a href="/" title="pause 홈페이지로 이동"><img src="" alt="pause" /></a>
+        <a href="/" title="pause 홈페이지로 이동" class="logo"
+          ><img src="./images/logo.png" alt="pause"
+        /></a>
       </h1>
       <div class="login header-right" style="display: none">
         <a href="/">Login</a>
@@ -40,11 +42,21 @@
         <a href="/">Logout</a>
       </div>
     </header>
-    <main>
-      <section class="location-back">
-        <h2><a href="/">뒤로가기</a></h2>
+    <main class="detail">
+      <section class="meditation">
+        <h2 class="a11y-hidden">명상하기</h2>
+        <a href="/" class="location-back"
+          ><img src="./images/arrow-left.png" alt="뒤로가기 버튼" /> back</a
+        >
+        <div class="video-container">
+          <video loop autoplay>
+            <source src="./media/rain.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="player-container">
+          <audio src="./media/rain.mp3"></audio>
+        </div>
       </section>
-      <section class="meditation"></section>
     </main>
   </body>
 </html>
