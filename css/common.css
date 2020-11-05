@@ -1,0 +1,154 @@
+@charset "UTF-8";
+/* Spoqa Sans Font CSS */
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+/* Nomalize CSS */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+
+/* Reset CSS */
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0 auto;
+  background: linear-gradient(#839aef, #5461e5) no-repeat;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+table {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+header,
+main,
+footer,
+section,
+article,
+aside,
+nav {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+a img {
+  border: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+li {
+  list-style: none;
+}
+
+address,
+em,
+i,
+cite {
+  font-style: normal;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table caption {
+  overflow: hidden;
+  width: 0;
+  height: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+/* 기본스타일 */
+html {
+  font-size: 10px;
+}
+
+body {
+  min-width: 320px;
+  font-size: 1.6rem;
+}
+
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+/* ///// 스킵네비게이션 ///// */
+/* 스킵네비게이션 */
+.skip-nav a {
+  position: fixed;
+  top: -100%;
+  z-index: 9999;
+  display: block;
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  border-bottom: 1px solid #fff;
+  color: #fff;
+  box-sizing: border-box;
+  text-align: center;
+  background: #14182c;
+}
+
+.skip-nav a:focus {
+  top: 0;
+}
+
+/* ///// header ///// */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  background: #1c1f30;
+}
+
+header * {
+  color: #fff;
+}
+
+.header-right span {
+  margin-right: 10px;
+}
+
+.header-right a {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background: #489beb;
+}
