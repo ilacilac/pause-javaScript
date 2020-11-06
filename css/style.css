@@ -70,6 +70,7 @@
 
 /* === DETAIL === */
 .detail {
+  overflow: hidden;
   position: relative;
 }
 .location-back {
@@ -83,10 +84,26 @@
   margin-top: -2px;
 }
 .detail .meditation {
-  overflow: hidden;
+  width: 100%;
   height: calc(100vh - 60px);
 }
 .detail video {
   /* width: 100%; */
+  position: absolute;
+  z-index: -1;
   height: calc(100vh - 60px);
+}
+
+.player-container svg {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+}
+.player-container .play {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
 }
