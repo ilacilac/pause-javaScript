@@ -23,13 +23,6 @@
   </head>
 
   <body>
-    <!-- skip navigation -->
-    <div class="skip-nav" aria-label="스킵 네비게이션">
-      <ul>
-        <li><a href="#">메인메뉴 바로가기</a></li>
-        <li><a href="#">본문 바로가기</a></li>
-      </ul>
-    </div>
     <header>
       <h1>
         <a href="/" title="pause 홈페이지로 이동" class="logo"
@@ -47,7 +40,7 @@
     <main class="detail">
       <section class="meditation">
         <h2 class="a11y-hidden">명상하기</h2>
-        <a href="/" class="location-back"
+        <a href="javascript:history.back()" class="location-back"
           ><img src="./images/arrow-left.png" alt="뒤로가기 버튼" /> back</a
         >
         <div class="video-container">
@@ -57,22 +50,7 @@
         </div>
         <div class="player-container">
           <audio src="./media/rain.mp3"></audio>
-          <svg
-            class="moving-outline"
-            width="200"
-            height="200"
-            viewBox="0 0 453 453"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <circle
-              cx="226.5"
-              cy="226.5"
-              r="216.5"
-              stroke="#1c1f30"
-              stroke-width="20"
-            />
-          </svg>
+
           <svg
             class="track-outline"
             width="200"
@@ -86,6 +64,22 @@
               cy="226.5"
               r="216.5"
               stroke="white"
+              stroke-width="20"
+            />
+          </svg>
+          <svg
+            class="moving-outline"
+            width="200"
+            height="200"
+            viewBox="0 0 453 453"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="226.5"
+              cy="226.5"
+              r="216.5"
+              stroke="#1c1f30"
               stroke-width="20"
             />
           </svg>
