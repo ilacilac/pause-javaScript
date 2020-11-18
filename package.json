@@ -1,0 +1,24 @@
+{
+  "name": "pause-javaScript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ilacilac/pause-javaScript.git",
+  "author": "ilacilac <qkralswl307@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^10.0.0",
+    "mongoose": "^5.10.15"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  },
+  "scripts": {
+    "start": "node -r esm /",
+    "start:dev": "nodemon --watch ./ -r esm ./server.js"
+  }
+}

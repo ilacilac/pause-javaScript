@@ -1,5 +1,5 @@
 const app = () => {
-  // DOM
+  /* === DOM === */
   const $timerBtn = document.querySelectorAll('.timer-picker button');
   const $timer = document.querySelector('.timer');
   const $playBtn = document.querySelector('.play');
@@ -8,12 +8,12 @@ const app = () => {
   const $bgm = document.querySelector('.player-container audio');
   const $movingOutline = document.querySelector('.moving-outline circle');
 
-  const urlParam = window.location.search.split('?')[1];
+  const urlParam = window.location.search.split('name=')[1];
   $bgm.setAttribute('src', `./media/${urlParam}.mp3`);
   $videoSource.setAttribute('src', `./media/${urlParam}.mp4`);
   $video.load();
 
-  // SVG
+  /* === SVG === */
   const outlineLength = $movingOutline.getTotalLength();
   // white위에 color가 위에있는 상태
   // outline크기만큼 dashed가 됨 => 1300(색) => 1300(빈칸) => 1300(색)
@@ -30,7 +30,7 @@ const app = () => {
       : `${fakeTimer / 60}:${fakeTimer % 60}`;
   let timerState = false;
 
-  // Functions
+  /* === Functions === */
   function timerOn() {
     timerState = true;
     $playBtn.src = './images/pause.svg';
@@ -70,7 +70,7 @@ const app = () => {
     }
   }, 1000);
 
-  // EVENT
+  /* === EVENT === */
   // Click Timer Button
   $timerBtn.forEach((button) => {
     button.addEventListener('click', (e) => {
